@@ -1,0 +1,21 @@
+{% extends 'calculator/layout.html' %}
+
+{% block content %}
+    <div id="main">
+        <h1>Калькулятор ингридиентов</h1>
+
+            <p>Выберите рецепт</p>
+                <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+                  <select class="dropdown-menu position-static d-grid gap-1 p-2 rounded-3 mx-0 border-0 shadow w-220px" data-bs-theme="dark">
+                      {% for recipe in data.keys %}
+                      <option  class="dropdown-item rounded-2" name="rec" >{{recipe}}</option>
+                      {% endfor %}
+                  </select>
+                </div>
+            <p>Укажите количество на какое кол-во персон</p>
+            <p id="number"><input type="number" size="3" name="num" min="1" max="1000" value="1" class="dropdown-item rounded-2 shadow w-220px" width="50px"></p>
+            <a href="(rec)/(num)"><button class="btn btn-primary" >Рассчитать!</button></a>
+
+    </div>
+{% endblock %}
+

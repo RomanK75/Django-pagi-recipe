@@ -1,0 +1,55 @@
+
+h1 {
+    display: block;
+    font-size: 3em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+body {
+    text-align: center;
+}
+
+div#main {
+    width: 400px;
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+h2, option {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+select,label,p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+p {
+    margin-top : 10px;
+}
+.dropdown-item {
+    width: 100px;
+    text-align: center;
+}
+
+input {
+    margin-left: 150px;
+}
+
+button {
+    margin-top: 25px;
+}
